@@ -118,6 +118,8 @@ interface GenerateApiParamsBase {
    *  authorization token
    */
   authorizationToken?: string;
+
+  customParams?: any;
 }
 
 interface GenerateApiParamsFromPath extends GenerateApiParamsBase {
