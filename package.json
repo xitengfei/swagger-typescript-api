@@ -1,5 +1,6 @@
 {
-  "name": "swagger-typescript-api",
+  "name": "@xitengfei/swagger-typescript-api",
+  "public": true,
   "version": "10.0.1",
   "description": "Generate typescript/javascript api from swagger schema",
   "scripts": {
