@@ -8,10 +8,13 @@ const { isObject } = require("lodash");
 
 const types = {
   /** { type: "integer" } -> { type: "number" } */
-  integer: TS_KEYWORDS.NUMBER,
+  integer: {
+    int32: TS_KEYWORDS.NUMBER, // int -> number
+    int64: TS_KEYWORDS.STRING, // long -> string
+  },
   number: TS_KEYWORDS.NUMBER,
   boolean: TS_KEYWORDS.BOOLEAN,
-  object: TS_KEYWORDS.OBJECT,
+  object: TS_KEYWORDS.ANY, // object -> any
   file: TS_KEYWORDS.FILE,
   string: {
     $default: TS_KEYWORDS.STRING,
