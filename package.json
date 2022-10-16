@@ -1,7 +1,7 @@
 {
   "name": "@xitengfei/swagger-typescript-api",
   "public": true,
-  "version": "10.0.1",
+  "version": "10.0.2",
   "description": "Generate typescript/javascript api from swagger schema",
   "scripts": {
     "cli:json": "node index.js -r -d -p ./swagger-test-cli.json -n swagger-test-cli.ts",
@@ -74,7 +74,7 @@
     "prettier": "^2.7.1",
     "swagger-schema-official": "2.0.0-bab6bed",
     "swagger2openapi": "^7.0.8",
-    "typescript": "^4.7.4"
+    "typescript": "4.7.4"
   },
   "bin": {
     "swagger-typescript-api": "index.js",
